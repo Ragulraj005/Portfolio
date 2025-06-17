@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragulraj P - Portfolio</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts - Roboto (for a more professional look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Three.js Canvas will be initialized here by JavaScript -->
+  <canvas id="threeJsCanvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Ragulraj P</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <button id="themeToggle" class="btn"><i class="fas fa-palette"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Ragulraj P</h1>
+      <p class="lead mb-4">Full Stack developer | Java Developer | Enthusiastic Learner</p>
+      <p class="fs-5">Passionate Full Stack Java Developer crafting scalable web applications.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-user"></i> About Me</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="card p-4 fade-in">
+            <div class="card-body">
+              <img src="./assets/image1.jpg"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x400/101010/00FF41?text=Image+Not+Found';"
+                alt="Ragulraj P" class="about-image">
+              <p class="card-text text-center text-md-start">
+                I am a passionate and skilled Java Full Stack developer with experience in various web technologies and
+                development tools. I am eager to contribute to dynamic projects and create engaging, user-friendly web
+                applications. My background in Civil Engineering has instilled strong analytical and problem-solving
+                skills, which I now apply to software development. I am constantly exploring new technologies and
+                seeking opportunities to build impactful digital solutions.
+              </p>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-10">
+          <div class="card p-4 fade-in">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-3">Languages/Web Technologies</h5>
+              <div class="d-flex flex-wrap justify-content-center mb-4">
+                <span class="badge fade-in fade-in-delay-1"><i class="fab fa-java"></i> Java</span>
+                <span class="badge fade-in fade-in-delay-2"><i class="fab fa-html5"></i> HTML/CSS</span>
+                <span class="badge fade-in fade-in-delay-3"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="badge fade-in fade-in-delay-4"><i class="fab fa-react"></i> ReactJS</span>
+                <span class="badge fade-in fade-in-delay-5"><i class="fas fa-file-code"></i> TypeScript</span>
+                <span class="badge fade-in fade-in-delay-1"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span class="badge fade-in fade-in-delay-2"><i class="fab fa-python"></i> Python</span>
+                <span class="badge fade-in fade-in-delay-3"><i class="fab fa-node-js"></i> NodeJS</span>
+              </div>
+
+              <h5 class="card-title text-center mb-3">Databases/Architecture</h5>
+              <div class="d-flex flex-wrap justify-content-center mb-4">
+                <span class="badge fade-in fade-in-delay-4"><i class="fas fa-database"></i> SQL</span>
+                <span class="badge fade-in fade-in-delay-5"><i class="fas fa-leaf"></i> MongoDB</span>
+                <span class="badge fade-in fade-in-delay-1"><i class="fas fa-server"></i> ExpressJS</span>
+                <span class="badge fade-in fade-in-delay-2"><i class="fas fa-leaf"></i> SpringBoot</span>
+              </div>
+
+              <h5 class="card-title text-center mb-3">Developer Tools</h5>
+              <div class="d-flex flex-wrap justify-content-center">
+                <span class="badge fade-in fade-in-delay-3"><i class="fas fa-code"></i> VS Code</span>
+                <span class="badge fade-in fade-in-delay-4"><i class="fas fa-laptop-code"></i> Eclipse</span>
+                <span class="badge fade-in fade-in-delay-5"><i class="fas fa-terminal"></i> Pycharm</span>
+                <span class="badge fade-in fade-in-delay-1"><i class="fas fa-share-square"></i> Postman</span>
+                <span class="badge fade-in fade-in-delay-2"><i class="fab fa-github"></i> GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-folder-open"></i> Projects</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+        <!-- Gaming Website Project -->
+        <div class="col d-flex">
+          <div class="card project-card fade-in">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gaming Website</h5>
+              <h6 class="card-subtitle mb-2">ReactJS, Bootstrap</h6>
+              <p class="card-text">
+                Developed a responsive gaming website with dynamic content retrieval from an API, enhancing user
+                experiences. Implemented interactive features like a responsive side menu and section highlighting based
+                on user interactions. Developed an interactive React component using Swiper for a dynamic game carousel
+                with fullscreen video capabilities and configurable Swiper settings. Designed a responsive React
+                SideMenu component featuring navigation items and social links, with state management for dynamic
+                updates based on user interaction.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="https://github.com/Ragulraj005/BOX-D" target="_blank" class="btn btn-github">
+                  <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bookstore Management System Project -->
+        <div class="col d-flex">
+          <div class="card project-card fade-in fade-in-delay-1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bookstore Management System</h5>
+              <h6 class="card-subtitle mb-2">Spring Boot, Thymeleaf, JavaScript, MySQL</h6>
+              <p class="card-text">
+                Developed a full-stack Bookstore Management System using Spring Boot for the backend, Thymeleaf for
+                server-side rendering, and JavaScript for interactivity. Designed and developed dynamic pages using
+                Thymeleaf to allow users to view, add, edit, and delete books via a responsive and interactive
+                interface. Added a user login page with session-based authentication to manage secure access to the
+                system's features. Used MySQL to store book and user data, ensuring efficient and persistent data
+                management across sessions.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="https://github.com/Ragulraj005/BookShop---Springboot" target="_blank" class="btn btn-github">
+                  <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Restaurant Website Project -->
+        <div class="col d-flex">
+          <div class="card project-card fade-in fade-in-delay-2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Restaurant Website</h5>
+              <h6 class="card-subtitle mb-2">HTML, CSS And Javascript</h6>
+              <p class="card-text">
+                The project involves creating a responsive front-end food website using HTML5, CSS, and JavaScript.
+                HTML5 is used for structuring the website's content, CSS for styling and layout, and JavaScript for
+                adding interactive elements and functionality. The goal is to develop a visually appealing and
+                user-friendly website that showcases a restaurant's menu, services, and other relevant information. The
+                project successfully delivers a responsive and visually appealing restaurant website.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="https://github.com/Ragulraj005/Restaurant_frontend" target="_blank" class="btn btn-github">
+                  <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="card p-4 fade-in">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Intern</h5>
+              <h6 class="card-subtitle mb-2">Skill-Lync (EpowerX Learning Technologies Private Limited)</h6>
+              <p class="card-text">January 2023 - April 2023</p>
+              <p class="card-text">
+                Gained hands-on experience in full-stack web development, contributing to various projects and learning
+                industry best practices. Actively participated in all phases of software development, from
+                conceptualization to deployment, ensuring robust and scalable solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="card p-4 fade-in">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-1">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div>
+                    <strong>B.E., Civil Engineering</strong><br>
+                    Kumaraguru College of Technology, 2018-2022<br>
+                    <small class="text-muted">CGPA: 8.19/10</small>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-2">
+                  <i class="fas fa-school"></i>
+                  <div>
+                    <strong>12th Standard</strong><br>
+                    Veveaham Higher Secondary School, 2017-2018<br>
+                    <small class="text-muted">Percentage: 91.4%</small>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-3">
+                  <i class="fas fa-school"></i>
+                  <div>
+                    <strong>10th Standard</strong><br>
+                    Sri Kannika Parameswari Higher Secondary School, 2015-2016<br>
+                    <small class="text-muted">Percentage: 92.4%</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="card p-4 fade-in">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-1">
+                  <i class="fas fa-award"></i>
+                  Everything about database 2.0: Skill-Lync
+                </li>
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-2">
+                  <i class="fas fa-award"></i>
+                  Introduction to Java Programming: Skill-Lync
+                </li>
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-3">
+                  <i class="fas fa-award"></i>
+                  The Complete Front-end Development: Skill-Lync
+                </li>
+                <li class="list-group-item d-flex align-items-center fade-in fade-in-delay-4">
+                  <i class="fas fa-award"></i>
+                  Learn Typescript: Coursera
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <h2 class="text-center section-title"><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="card p-4 contact-info fade-in text-center">
+            <div class="card-body">
+              <p class="mb-4">
+                Feel free to reach out to me via email or connect through my social profiles.
+              </p>
+              <p class="mb-3"><i class="fas fa-phone-alt me-2"></i> Phone: <a href="tel:+916382951257">+91
+                  6382951257</a></p>
+
+
+
+              <hr class="my-5" style="border-color: var(--hr-color);">
+
+              <div class="social-icons mt-4 text-center">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajragul575@gmail.com" target="_blank"
+                  title="Send me an Email" class="contact-email-icon">
+                  <i class="fas fa-envelope"></i>
+                  <a href="https://www.linkedin.com/in/ragulraj-p/" target="_blank" class="mx-2"
+                    title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/Ragulraj005" target="_blank" class="mx-2" title="GitHub Profile"><i
+                      class="fab fa-github"></i></a>
+                  <a href="https://leetcode.com/u/rajragul005/" target="_blank" class="mx-2 leetcode-icon"
+                    title="LeetCode Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
+                      <path
+                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM9.354 4.146a.5.5 0 0 1 0 .708L6.77 8l2.584 3.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0" />
+                    </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5">
+    <p class="mb-0">&copy; Ragulraj P </p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
